@@ -11300,3 +11300,17 @@ textarea.form-control-lg {
   background-position: center;
   height: 400px;
 }
+
+.logo-acq{
+  text-decoration: none !important;
+  color: var(--bs-body-color);
+}
+
+.login-div{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  /* background: linear-gradient(#141e30, #243b55); */
+  box-shadow: 0px 0px 1px #1aa7ec;
+  border-radius: 10px;
+}
