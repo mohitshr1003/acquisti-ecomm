@@ -14,11 +14,10 @@
                 <form method="post">
                     {% csrf_token %}
                     <div class="col-12 pt-3">
-                        <input type="text" class="form-control" placeholder="Username" required="">
+                        <input type="email" class="form-control" name="mail_id" placeholder="Email" required="">
                     </div>
                     <div class="col-12 pt-3">
-                        <!-- <label>User Name</label> -->
-                        <input type="password" class="form-control" placeholder="Password" required="">
+                        <input type="password" class="form-control" name="psw" placeholder="Password" required="">
                     </div>
                     <div class="col-12 pt-3 text-start">
                         <span style="font-size: 12px; color: #878787;">By continuing, you agree to Acquisti's <a

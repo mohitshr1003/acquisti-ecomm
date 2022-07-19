@@ -2,7 +2,7 @@
 {% load static %}
 {% block body_content %}
 
-<div class="col-12 py-4" style="height: 550px; background: url('{% static "images/signin-bg.jpg" %}');
+<div class="col-12 py-4" style="height: auto; background: url('{% static "images/signin-bg.jpg" %}');
     background-position: center; background-size: cover; background-repeat: no-repeat;">
     <div class="container h-100 pb-3">
         <div class="row h-100">
@@ -26,13 +26,23 @@
                             <input type="email" class="form-control" name="email_id" placeholder="Email" required="">
                         </div>
                     </div>
+                    <!-- <div class="row pt-3">
+                        <div class="col-2">
+                            <h5>Gender:</h5>
+                        </div>
+                        <div class="col-6">
+                            <label>Male</label>
+                            <input type="radio" class="form" name="gender" placeholder="Male" required="">
+                            <label>Female</label>
+                            <input type="radio" class="form" name="gender" placeholder="Female" required="">
+                            <label>Other</label>
+                            <input type="radio" class="form" name="gender" placeholder="Other" required="">                        </div>
+                    </div> -->
+
                     <div class="row pt-3">
                         <div class="col-12">
                             <input type="tel" class="form-control" name="phn" placeholder="Phone Number" required="">
                         </div>
-                        <!-- <div class="col-6">
-                            <input type="text" class="form-control" name="phn2" placeholder="Tel (optional)">
-                        </div> -->
                     </div>
                     <div class="row pt-3">
                         <div class="col-12">
