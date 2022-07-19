@@ -30,6 +30,11 @@
                 <h1><a class="logo-acq text-light" href="/"> ACQUISTI </a></h1>
             </div>
             <div class="col-6 text-end py-3">
+                {% if query_set %}
+                {% for qs in query_set %}
+                {{ qs.fname }}
+                {% endfor %}
+                {% endif %}
                 <a href="../signin/" class="text-light"> Sign In</a> | <a href="../signup/" class="text-light"> Sign Up</a>
             </div>
         </div>

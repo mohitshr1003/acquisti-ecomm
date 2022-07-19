@@ -3,10 +3,13 @@ from .models import *
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+
 def homepage(request):
     return render(request, 'index.html')
+
 
 def signup_view(request):
 
@@ -33,4 +36,19 @@ def signup_view(request):
 
 def signin_view(request):
 
+    data = {}
+
+    if(request.method == 'POST'):
+        qs = UserDetails.objects.filter(
+            user_email = request.POST.get('mail_id'),
+            password = request.POST.get('psw')
+            )
+        
+        info = {'query_set': qs}
+
+        if qs:
+            return redirect('../', context=info)
+        else:
+            data['result'] = 'Invalid Details'
+            return render(request, 'signin.html', context=data)
     return render(request, 'signin.html')
