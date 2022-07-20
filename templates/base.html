@@ -12,6 +12,8 @@
     <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     <!-- Bootstrap core JS-->
@@ -83,10 +85,43 @@
     {% block body_content %}
     {% endblock %}
 </body>
-<!-- Footer-->
-<footer class="py-5 bg-light">
-    <div class="container">
-        <p class="m-0 text-center text-dark">Copyright &copy; Acquisti 2022</p>
+
+<footer class="py-5 bg-light text-dark ft-h">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-4 col-12 h-100 py-2 pe-5 text-start"> 
+                <h3>ACQUISTI</h3>
+                <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+                <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+            </div>
+            <div class="col-lg-2 col-12 h-100 py-2 text-start">
+                <h6 class="mb-3">Connect with Us</h6>
+                    <p class="mb10"><a href="#"><i class="fab fa-instagram fleft padding-right"></i></a> <a>Instagram</a></p>
+                    <p><a href="#"><i class="fab fa-facebook fleft padding-right"></i></a> <a>Facebook</a></p>
+                    <p><a href="#"><i class="fab fa-twitter fleft padding-right"></i></a> <a>Twitter</a></p>
+            </div>
+            <div class="col-lg-3 col-12 h-100 py-2 text-start"> 
+                <h6 class="mb-3">Make Money with Us</h6>
+                <p class="mb10">Sell on Amazon</p>
+                <p>Sell under Amazon Accelerator</p>
+                <p>Amazon Global Selling </p>
+                <p>Become an Affiliate</p>
+                <p>Fulfilment by Amazon</p>
+                <p>Advertise Your Products</p>
+                <p>Amazon Pay on Merchants</p>
+            </div>
+            <div class="col-lg-3 col-12 h-100 py-2 text-start">                
+                <h6 class="mb-3">Let Us Help You</h6>
+                <p>COVID-19 and Acquisti</p>
+                <p>Your Account</p>
+                <p>Returns Centre</p>
+                <p>100% Purchase Protection</p>
+                <p>Acquisti App Download</p>
+                <p>Help</p>
+            </div>
+        </div>
     </div>
 </footer>
 <div class="col-12 pt-3" style="height: 50px; background-color: #1aa7ec;">

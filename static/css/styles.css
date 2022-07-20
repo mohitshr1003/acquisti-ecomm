@@ -11313,3 +11313,7 @@ textarea.form-control-lg {
   box-shadow: 0px 0px 10px #ccc;
   border-radius: 10px;
 }
+
+.ft-h{
+  height: auto;
+}
