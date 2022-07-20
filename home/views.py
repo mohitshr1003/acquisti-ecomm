@@ -10,6 +10,9 @@ from django.contrib.auth.decorators import login_required
 def homepage(request):
     return render(request, 'index.html')
 
+def mobiles_page(request):
+    return render(request, 'mobile.html')
+
 
 def signup_view(request):
 
