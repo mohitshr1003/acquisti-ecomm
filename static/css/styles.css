@@ -11317,3 +11317,26 @@ textarea.form-control-lg {
 .ft-h{
   height: auto;
 }
+
+form.srch input[type=text] {
+  float: left;
+  width: 80%;
+}
+
+form.srch button {
+  float: left;
+  width: 10%;
+  background: #09647a;
+  color: white;
+}
+
+
+.inp-rad{
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px;
+}
+
+.btn-rad{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}

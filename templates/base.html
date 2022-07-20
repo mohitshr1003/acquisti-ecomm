@@ -25,19 +25,34 @@
 <body>
 
     <!-- Top Header -->
-    <div class="col-12 text-light" style="background-color: #1aa7ec;">
+    <div class="col-12 text-light sticky-lg-top" style="background-color: #1aa7ec;">
     <div class="container">
         <div class="row" style="background-color: #1aa7ec;">
-            <div class="col-6 py-1">
+            <div class="col-lg-2 col-6 py-1">
                 <h1><a class="logo-acq text-light" href="/"> ACQUISTI </a></h1>
             </div>
-            <div class="col-6 text-end py-3">
-                {% if query_set %}
-                {% for qs in query_set %}
-                {{ qs.fname }}
-                {% endfor %}
-                {% endif %}
+            <div class="col-6 d-none d-sm-block text-center ps-5" style="padding-top: 0.8rem;">
+                <form class="srch">
+                    {% csrf_token %}
+                    <input type="text" class="form-control inp-rad" placeholder="Search for products, brands and more" name="search">
+                    <button type="submit" class="btn btn-rad"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="col-lg-4 col-6 text-end pt-3">
+                <b>
+                <ol class="list-inline list-unstyled">
+                <li class="list-inline-item">
+                <a href="#" class="text-light" style="text-decoration: none;">Become a Seller</a>
+                </li>
+                <li class="list-inline-item">
+                    &nbsp; &nbsp;
+                </li>
+                <li class="list-inline-item">
                 <a href="../signin/" class="text-light"> Sign In</a> | <a href="../signup/" class="text-light"> Sign Up</a>
+                </li>
+                </ol>
+                </b>
             </div>
         </div>
     </div>
@@ -81,7 +96,6 @@
         </div>
     </nav>
 
-
     {% block body_content %}
     {% endblock %}
 </body>
@@ -98,9 +112,9 @@
             </div>
             <div class="col-lg-2 col-12 h-100 py-2 text-start">
                 <h6 class="mb-3">Connect with Us</h6>
-                    <p class="mb10"><a href="#"><i class="fab fa-instagram fleft padding-right"></i></a> <a>Instagram</a></p>
-                    <p><a href="#"><i class="fab fa-facebook fleft padding-right"></i></a> <a>Facebook</a></p>
-                    <p><a href="#"><i class="fab fa-twitter fleft padding-right"></i></a> <a>Twitter</a></p>
+                    <p class="mb10"><a>Instagram</a></p>
+                    <p><a>Facebook</a></p>
+                    <p><a>Twitter</a></p>
             </div>
             <div class="col-lg-3 col-12 h-100 py-2 text-start"> 
                 <h6 class="mb-3">Make Money with Us</h6>
