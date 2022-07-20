@@ -8,6 +8,9 @@ from django.contrib.auth.forms import AuthenticationForm
 def homepage(request):
     return render(request, 'index.html')
 
+def mobilepage(request):
+    return render(request, 'mobile.html')
+
 def signup_view(request):
 
     if(request.method == 'POST'):

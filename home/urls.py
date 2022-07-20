@@ -5,4 +5,5 @@ urlpatterns = [
     path('', homepage),
     path('signup/', signup_view),
     path('signin/', signin_view),
+    path('mobiles/',mobilepage),
 ]
